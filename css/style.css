@@ -1,0 +1,113 @@
+body{
+  background-color:#FFF5EE;
+}
+table{ /* задаем стиль для основной таблицы */
+  width: 50%;
+  margin: auto;
+  float:left;
+  border: 3px solid;
+  border-color: #CD853F;
+  border-radius: 20px;
+}
+#tableDiv{ /*стиль второстепенной таблицы */
+  margin-left: 10%;
+  margin-right: 20px;
+  width: 15%;
+  float: left;
+  color:
+}
+th:first-child{/* закругление для первого элемента таблицы*/
+  border-top-left-radius: 16px;
+}
+th:last-child{/* закгругление последнего такого элемента*/
+  border-top-right-radius: 16px;
+}
+th{/*стиль для ячеек заголовков */
+  background-color: #D2B48C;
+  height: 5vh;
+  font-size: 1vw;
+  }
+#th1,#th2,#th3,#th4{ /*курсор нажатия для верхней строки*/
+  cursor: pointer;
+}
+tr{/*стиль для строк */
+  border: 0px;
+}
+td /* стиль обычных ячеек*/
+{
+  width:13%;
+  border: 0px;
+  max-height: 5vh;
+  height: 5vh;
+  font-size: 1vw;
+  font-style: normal;
+  text-align: center;
+  background-color: 	#FAEBD7;
+}
+#th3{ /* задаем размер ячейки описания */
+  width: 61%;
+}
+#td3{/* размер ячеек описания*/
+  text-align: justify;
+  width:61%;
+}
+#tableDiv tr{/* высота строк в таблице редактирвоания*/
+  height: 5vh;
+}
+
+#tableDiv tr:last-child #tdedit:last-child{/* закругление последнего жлемента*/
+  border-radius: 0px 0px 16px 10px;
+}
+tr:last-child td:first-child {/* закругление первой ячейки последней строки*/
+border-radius: 0 0 0 16px;
+}
+tr:last-child td:last-child {/* закругление последней ячейки первой строки*/
+border-radius: 0 0 16px 0;
+}
+
+input{/*стиль для формы редактирования*/
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+input:first-child{/* оступ сверху */
+  margin-top: 10px;
+}
+select{/*стиль выбора из списка*/
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+button{/*стиль для кнопки отправки формы редактирования */
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid #CD853F;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.delete{/*стиль кнопки удаления сверху*/
+  font-size: 1.3vw;
+  color: white;
+  font-weight: bolder;
+}
+.unhide{/* стиль кнопки возврата */
+  font-size: 0.9vw;
+  font-weight: bold;
+  position: fixed;
+  width: 8%;
+  background-color: #D2B48C;
+  margin-left: 80%;
+  margin-top: 5px;
+  padding: 7px 7px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 5px #CD853F;
+  border-radius: 5px;
+  cursor: pointer;
+}
